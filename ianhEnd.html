@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>I am not here.</title> 
+    	<script src="ios-orientationchange-fix.min.js"></script>
+    <style type="text/css">
+img {
+    width: 100%;
+    height: auto;
+        }
+        video{
+            width: 100%;
+            height: auto;
+        }
+    div {
+		height: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		width: 100%;
+	}
+</style>
+</head>
+    <body bgcolor="#00000">
+
+
+    <video src="media/IamNotHereEnding.mp4" autoplay width="854" height="480" style="position: absolute;"></video>
+    <img src="media/pixelVids.png" usemap="#Map7" width="854" height="480" style="position: relative;"/>
+
+        
+<map name="Map7" id="Map7">
+<map name="Map" id="Map">
+    <area alt="" title="" href="index.html" shape="poly" coords="157,114,292,146,286,175,208,158,185,161,182,154,152,150" />
+</map>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+});
+</script>    
+        
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Catches the eye.</title> 
+    	<script src="ios-orientationchange-fix.min.js"></script>
+    <style type="text/css">
+img {
+    width: 100%;
+    height: auto;
+        }
+        video{
+            width: 100%;
+            height: auto;
+        }
+    div {
+		height: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		width: 100%;
+	}
+</style>
+</head>
+    <body bgcolor="#00000">
+<audio autoplay loop>
+        <source src="media/br.mp3" type="audio/mpeg"/>
+        </audio>
+        <audio autoplay>
+        <source src="media/Door%20Squeak%201.mp3" type="audio/mpeg"/>
+        </audio>
+ 
+
+    <video src="media/br.mp4" autoplay width="854" height="480" style="position: absolute;"></video>
+    <img src="media/pixelVids.png" usemap="#Map7" width="854" height="480" style="position: relative;"/>
+
+        
+<map name="Map7" id="Map7">
+    <area alt="" title="" href="ianhEnd.html" shape="poly" coords="113,397,128,396,129,409,123,411,113,454,101,448" />
+    <area alt="" title="" href="goodEnd.html" shape="poly" coords="515,304,471,373,493,386,537,319" />
+    <area alt="" title="" href="tnwo.html" shape="poly" coords="456,85,507,126,530,132,548,146,546,171,522,183,502,173,488,153,470,143,463,123,451,115,453,85" />
+</map>
+        
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+});
+</script>   
+        
+    </body>
+</html>

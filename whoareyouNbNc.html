@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>It's too dark.</title> 
+    	<script src="ios-orientationchange-fix.min.js"></script>
+    <style type="text/css">
+img {
+    width: 100%;
+    height: auto;
+        }
+        video{
+            width: 100%;
+            height: auto;
+        }
+    div {
+		height: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		width: 100%;
+	}
+</style>
+</head>
+    <body bgcolor="#00000">
+
+
+    <video src="media/WhoAreYou..mp4" autoplay width="854" height="480" style="position: absolute;"></video>
+    <img src="media/pixelVids.png" usemap="#Map2" width="854" height="480" style="position: relative;"/>
+
+        
+<map name="Map2" id="Map2">
+    <area alt="" title="" href="creepNbNc.html" shape="poly" coords="4,366,26,379,21,410,31,420,42,444,73,437,107,383,103,369,123,345,79,305,58,318,44,318,47,329" />
+    <area alt="" title="" href="tnwo.html" shape="poly" coords="649,333,642,364,658,379,642,400,648,420,636,449,687,477,708,420,730,413,730,388" />
+    <area alt="" title="" href="lightswitchNbNc.html" shape="poly" coords="816,379,761,364,791,268,842,281" />
+
+</map>
+        
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+});
+</script>   
+        
+    </body>
+</html>

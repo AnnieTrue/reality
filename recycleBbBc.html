@@ -1,0 +1,54 @@
+<!--So I commented out the bit that makes it fulll screen so the image map works right now, but once that is uncommented the image map no longer works-->
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>It's too dark.</title> 
+    	<script src="ios-orientationchange-fix.min.js"></script>
+    <style type="text/css">
+img {
+    width: 100%;
+    height: auto;
+        }
+        video{
+            width: 100%;
+            height: auto;
+        }
+    div {
+		height: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		width: 100%;
+	}
+</style>
+</head>
+    <body bgcolor="#00000">
+        <audio autoplay>
+            <source src="media/Door Squeak 1.mp3" type="audio/mpeg">
+        </audio>
+        <audio autoplay loop>
+        <source src="media/recycle1.mp3" type="audio/mpeg">
+        </audio>
+ 
+        <img src="media/recycle1.gif" usemap="#Map"/>
+        
+        
+        
+
+            
+<map name="Map" id="Map">
+    <area alt="" title="" href="whoareyouBbBc.html" shape="poly" coords="85,346,73,345,70,352,88,365,104,350,108,353,117,354,117,360,124,361,127,355,148,346,154,347,159,342,151,322,167,308,158,294,125,307,106,321,98,327,88,327,82,331" />
+    <area alt="" title="" href="whereareweBbBc.html" shape="poly" coords="90,397,76,401,91,419,142,394,162,406,189,396,198,394,201,388,193,371,192,364,202,353,192,339,110,382,96,386" />
+</map> 
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+});
+</script>     
+    </body>
+</html>

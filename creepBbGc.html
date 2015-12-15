@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>It's too dark.</title> 
+    	<script src="ios-orientationchange-fix.min.js"></script>
+    <style type="text/css">
+img {
+    width: 100%;
+    height: auto;
+        }
+        video{
+            width: 100%;
+            height: auto;
+        }
+    div {
+		height: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		width: 100%;
+	}
+</style>
+</head>
+    <body bgcolor="#00000">
+
+    <video src="media/You're%20creeping%20me%20out..mp4" autoplay width="854" height="480" style="position: absolute;"></video>
+    <img src="media/pixelVids.png" usemap="#Map4" width="854" height="480" style="position: relative;"/>
+
+        
+<map name="Map4" id="Map4">
+    <area alt="" title="" href="badEnd.html" shape="poly" coords="38,412,245,417,250,441,38,441" />
+</map>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+});
+</script>    
+        
+    </body>
+</html>

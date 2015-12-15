@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>hallway</title> 
+    	<script src="ios-orientationchange-fix.min.js"></script>
+    <style type="text/css">
+img {
+    width: 100%;
+    height: auto;
+        }
+        video{
+            width: 100%;
+            height: auto;
+        }
+    div {
+		height: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		width: 100%;
+	}
+</style>
+</head>
+    <body bgcolor="#00000">
+
+
+    <video src="media/goodEnding.mp4" autoplay width="854" height="480" style="position: absolute;"></video>
+    <img src="media/pixelVids.png" usemap="#Map7" width="854" height="480" style="position: relative;"/>
+
+        
+<map name="Map7" id="Map7">
+    <area alt="" title="" href="turnaround.html" shape="poly" coords="197,71,199,87,223,85,234,133,249,144,240,239,255,249,268,218,279,217,295,236,450,178,454,155,440,116,386,106,366,51,278,55" />
+
+</map>
+        
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+});
+</script>     
+    </body>
+</html>

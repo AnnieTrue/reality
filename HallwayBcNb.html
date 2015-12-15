@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>hallway</title>
+  <script src="ios-orientationchange-fix.min.js"></script>
+    <style type="text/css">
+img {
+    width: 100%;
+    height: auto;
+        }
+        video{
+            width: auto;
+            height: 100%;
+        }
+	img[usemap] {
+		border: none;
+		height: 100%;
+		width: auto;
+	}
+</style>
+</head>
+    <body bgcolor="#00000">
+        <audio autoplay loop>
+        <source src="media/both.mp3" type="audio/mpeg">
+        </audio>
+
+    <video src="media/both.mp4" autoplay loop width="1272" height="410" style="position: absolute;"></video>
+    <img src="media/pixelHall.png" usemap="#Map" width="1272" height="410" style="position: relative;"/>
+
+<map name="Map" id="Map">
+    <area alt="" title="" href="recycleBcNb.html" shape="poly" coords="879,17,1043,20,1040,384,884,385" />
+</map>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+});
+</script>
+    </body>
+</html>

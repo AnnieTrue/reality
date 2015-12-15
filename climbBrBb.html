@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<script src="ios-orientationchange-fix.min.js"></script>
+    <style type="text/css">
+img {
+    width: 100%;
+    height: auto;
+        }
+    div {
+		width: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		width: 100%;
+	}
+</style>
+   <title>Sooner or later they all try to climb.</title> 
+</head>
+    <body bgcolor="#00000">
+<audio autoplay>
+        <source src="media/Door Squeak 2.mp3" type="audio/mp3"/>
+        </audio>
+<img src="media/7.png" border="0" usemap="#exit"/><!--
+--><img src="media/6.png" border="0"/>
+<img src="media/5.png" border="0" usemap="#nothere"/>
+<img src="media/4.png" border="0" usemap="#drop"/>
+<img src="media/3.png" border="0"/>
+<img src="media/2.png" border="0"/>
+<img src="media/1.png"border="0"/>
+<A NAME="codeword"></A>
+<img src="media/0.png"border="0" usemap="#splat"/>
+
+        
+        
+        
+<map name="splat" id="splat">
+    <area alt="" title="" href="badEnd.html" shape="poly" coords="366,234,368,237,444,238,500,110,555,230,619,158,647,228,741,250,672,341,736,416,680,412,668,534,582,415,511,531,467,405,395,458,403,323" />
+</map> 
+        <map name="drop" id="drop">
+    <area alt="" title="" href="#codeword" shape="poly" coords="219,2477,391,2486,390,2557,209,2544" />
+    <area alt="" title="" href="#codeword" shape="poly" coords="294,2086,287,2132,325,2144,328,2189,466,2201,471,2125,419,2125,409,2108" />
+</map>
+        <map name="nothere" id="nothere">
+    <area alt="" title="" href="badEnd.html" shape="poly" coords="697,3478,765,3478,794,3677,700,3675" />
+</map>
+        <map name="exit" id="exit">
+    <area alt="" title="" href="badEnd.html" shape="poly" coords="482,2,486,37,629,36,633,0" />
+</map>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+});
+</script>
+    </body>
+</html>
